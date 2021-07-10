@@ -16,18 +16,15 @@ if typee == "yellow" or typee == "y":
                 words.append(i)
         words=sorted(words, key=lambda x:len(x), reverse=False)
         curr = 0
-        resolved = 0
         for i in words:
             
-            if curr >= 2001:
-                pyperclip.copy(answer)
-                resolved = 1
+            if curr >= 2001: #check for character limit for non-nitro discord!
                 break
 
             else:
                 curr += len(i)
                 curr += 1
-                if curr <= 2000:
+                if curr <= 2000: #again check for character limit!
                     answer += i 
                     answer += " "
         
