@@ -3,6 +3,8 @@ fp=open("cogs/words.txt","r")
 everything=fp.read().split('\n')
 typee = input("Which tea are we drinking?")
 used = []
+#apparently, it appears that only green tea cares if the words have been used.
+#ill get back to that later.
 if typee == "yellow" or typee == "y":
     while True:
         
